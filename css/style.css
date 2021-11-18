@@ -150,9 +150,15 @@ border-bottom: 1px solid #ececec;
   padding-bottom: 32px;
 }
 
+.item-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contacts-nav a {
   color: var(--primary-text-color);
-  font-style: normal;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -163,8 +169,8 @@ border-bottom: 1px solid #ececec;
   color: var(--accent-color);
 }
 
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -174,6 +180,17 @@ border-bottom: 1px solid #ececec;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center
 }
 
 .hero-title {
@@ -213,6 +230,18 @@ border-bottom: 1px solid #ececec;
 
 .peculiarities-item {
   width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.peculiarities-icon {
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .peculiarities-list .item {
@@ -301,6 +330,48 @@ display: flex;
   display: block;
   margin-bottom: 30px;
 }
+
+.social-link {
+  display: flex;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  margin: 12px;
+}
+
+.link-item {
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #AFB1B8;
+}
+
+.social-list .link:not(:last-child) {
+  margin: 0;
+}
+
+.link-item:hover,
+.link-item:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
 .team-title {
   margin-bottom: 50px;
   color: var(--title-text-color);
