@@ -402,38 +402,29 @@ display: flex;
 .customers-list {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.customers-item {
+  color: #AFB1B8;
 }
 
-.customers-item {
+.customers-link {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #AFB1B8;
+  justify-content: center;
   width: 170px;
-  height: 92px;
+  height: 92px; 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  color: #AFB1B8;
 }
 
 .customers-item +.customers-item {
   margin-left: 30px;
 }
 
-.customers-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #AFB1B8;
-}
-
-.customers-icon {
-  fill: currentColor;
-}
-
-.customers-item:hover,
-.customers-item:focus {
- color: var(--accent-color);
+.customers-link:hover,
+.customers-link:focus {
+color: var(--accent-color);
 }
 
 /* подвал */
